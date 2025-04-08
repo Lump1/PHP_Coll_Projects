@@ -1,0 +1,6 @@
+DirectoryIndex index.php
+Order allow,deny
+Allow from all
+Require all granted
+
+ErrorDocument 404 /devel/404
