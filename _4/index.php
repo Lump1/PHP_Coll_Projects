@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+        body {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        div {
+            width: fit-content;
+            height: fit-content;
+        }
+    </style>
 </head>
 <body>
     <?php 
@@ -246,9 +265,11 @@
     
         function checkValue($function, $value)
         {
+            echo "<div>";
             echo "<strong>$function(" . var_dump($value) ."):</strong> ";
             $function($value);
             echo "<br>";
+            echo "</div>";
         }
 
         function arrayOut($array) {

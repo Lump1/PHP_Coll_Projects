@@ -8,55 +8,22 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
     <style>
+        html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
         body {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 10px;
-            background-color: rgb(16, 15, 15);
-        }
-
-        div {
-            border-radius: 15px;
-            background-color: rgb(40, 39, 38);
-            padding: 10px;
-            color: rgb(206, 205, 195);
-        }
-
-        h1 {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 30px;
-        }
-
-        code {
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 14px !important;
-            line-height: 160%;
-            padding: 4px 8px;
-            border-radius: 5px;
-            text-wrap: wrap;
-            background-color: rgb(28, 27, 26);
-            border: 1px rgb(52, 51, 49) solid;
-            display: block;
-        }
-
-        *:not(h1) {
-            font-size: 20px;
-        }
-
-        .back {
+            height: 100%;
+            width: 100%;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 48px;
-            user-select: none;
-            cursor: pointer;
-            transition: all .1s ease-in-out;
-            transform-origin: bottom left;
+            flex-wrap: wrap;
+            flex-direction: column;
+            overflow: hidden;
         }
-
-        .back:hover {
-            background-color: rgb(135, 154, 57);
+        div {
+            width: fit-content;
+            height: fit-content;
         }
     </style>
 </head>
@@ -210,7 +177,7 @@ echo "</div>";
     <= BACK </div>
         </body>
 <script>
-    document.getElementsByClassName("back")[0].addEventListener('click', () => window.open("/devel", "_self"));
+    document.getElementsByClassName("back")[0].addEventListener('click', () => window.open("/project/_2", "_self"));
 </script>
 
 </html>
