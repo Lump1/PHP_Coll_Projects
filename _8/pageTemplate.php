@@ -13,6 +13,7 @@ $template = <<<HTML
         flex-direction: column;
         flex: end;
         max-width: 250px;
+        gap: 10px;
       }  
     </style>
 </head>
@@ -21,9 +22,9 @@ $template = <<<HTML
     <br/>
     <strong>Task 2</strong>
     <form method="POST" action="index.php">
-        Name: <input type="text" name="Task2_name"><br>
-        Age: <input type="number" name="Task2_age"><br>
-        <textarea name="Task2_message"></textarea><br>
+        Name: <input type="text" name="Task2_name">
+        Age: <input type="number" name="Task2_age">
+        <textarea name="Task2_message"></textarea>
         <input type="submit">
     </form>
 

@@ -50,7 +50,7 @@ if(!isset($_GET["Task3_age"])) {
             <strong>Task 3</strong>
 
             <form method="GET" action="index.php">
-                Введіть ваш вік: <input type="number" name="Task3_age"><br>
+                Введіть ваш вік: <input type="number" name="Task3_age">
                 <input type="submit">
             </form>
     HTML;
@@ -67,8 +67,8 @@ $task4_Form = <<<HTML
             <strong>Task 4</strong>
 
             <form method="POST" action="index.php">
-                Login: <input type="text" name="Task4_login"><br>
-                Password: <input type="password" name="Task4_pass"><br>
+                Login: <input type="text" name="Task4_login">
+                Password: <input type="password" name="Task4_pass">
                 <input type="submit">
             </form>
     HTML;
@@ -76,7 +76,7 @@ $task4_Form = <<<HTML
 addToBody($task4_Form);
 
 if(isset($_POST["Task4_login"]) && isset($_POST["Task4_pass"])) {
-    $data = ["pass" => $_POST["Task4_pass"], "login"=> $_POST["Task4_login"]];
+    $data = ["pass" => trim($_POST["Task4_pass"]), "login"=> trim($_POST["Task4_login"])];
 
     // var_dump($data);
 
@@ -94,7 +94,7 @@ $task5_Form = <<<HTML
             <strong>Task 5</strong>
 
             <form method="GET" action="index.php">
-                Name: <input type="text" name="Task5_name" /><br>
+                Name: <input type="text" name="Task5_name" />
                 <input type="submit">
             </form>
     HTML;
@@ -118,8 +118,8 @@ $task6_Form = <<<HTML
             <strong>Task 6</strong>
 
             <form method="POST" action="index.php">
-                Name: <input type="text" name="Task6_name" /><br>
-                <textarea name="Task6_message"></textarea><br>
+                Name: <input type="text" name="Task6_name" />
+                <textarea name="Task6_message"></textarea>
                 <input type="submit">
             </form>
     HTML;
