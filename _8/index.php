@@ -147,4 +147,18 @@ if(isset($_POST["Task6_message"])) {
 }
 
 
+
+// $tasksCases = [
+//     "Task 2" => [
+//         '<input type="text" name="Task2_name">', 
+//         '<input type="number" name="Task2_age">', 
+//         '<textarea name="Task2_message"></textarea>'
+//     ],
+//     "Task 3" => [
+//         '<input type="text" name="Task2_name">', 
+//         '<input type="number" name="Task2_age">'
+//     ],
+    
+// ];
+
 echo getTemplateWithBodyFilled();

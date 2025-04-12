@@ -60,3 +60,19 @@ function edithHtml($search, $innerHtml) {
         $template = str_replace($search, $search . "" . $innerHtml, $template);
     }
 }
+
+function generateForm($method, $action, $inputs) {
+    $inputStrings = buildHtmlStringFromArray($inputs);
+
+    $form = <<<HTML
+        <form method="{$method}" action="{$action}">
+            {$inputStrings}
+        </form>
+    HTML;
+
+    return $form;
+}
+
+function buildHtmlStringFromArray($array) {
+    return implode('<br/>', $array);
+}
