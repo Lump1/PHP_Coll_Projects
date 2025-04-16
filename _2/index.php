@@ -32,8 +32,8 @@
     <div>
         <h1>PHP Tasks</h1>
         <ol>
-            <li><a href="/project/_2/first.php">Variables in PHP</a></li>
-            <li><a href="/project/_2/second.php">PHP arrays, array methods</a></li>
+            <li><a href="first.php">Variables in PHP</a></li>
+            <li><a href="second.php">PHP arrays, array methods</a></li>
         </ol>
     </div>
 </body>

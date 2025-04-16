@@ -213,12 +213,6 @@
     echo $var;
     echo "</div>";
     ?>
-
-    <div class="back">
-        <= BACK </div>
 </body>
-<script>
-    document.getElementsByClassName("back")[0].addEventListener('click', () => window.open("/project/_2", "_self"));
-</script>
 
 </html>

@@ -12,7 +12,7 @@
     <div>
         <h1>404 【・_・?】</h1>
         <p>Not found</p>
-        <a href="/project/_2">Go back</a>
+        <a href="index.php">Go back</a>
     </div>
 </body>
 
